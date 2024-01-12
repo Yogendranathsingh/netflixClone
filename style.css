@@ -1,0 +1,308 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hind&family=Lato:ital,wght@1,300&family=Noto+Sans&family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+button{
+    cursor: pointer;
+}
+
+.bg{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+}
+
+.bg-black{
+    position: absolute;
+    z-index: -1;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left{
+    width: 100px;
+    margin: 15px 0px 0px 30px;
+}
+
+nav .left svg{
+    fill: red;
+    height: 40px;
+}
+
+nav .right{
+    margin: 15px 30px 0px 0px;
+}
+
+nav .right button:first-child{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
+
+nav .right button:last-child{
+    font-size: 18px;
+    background-color:red;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width:500px) {
+    nav .right{
+        margin: 15px 5px 0px 0px;
+    }
+    nav .right button:first-child{
+        font-size: 18px;
+        background-color: black;
+        color: white;
+        padding: 5px 25px;
+        border-radius: 5px;
+    }
+
+    nav .right button:last-child{
+        font-size: 18px;
+        background-color:red;
+        color: white;
+        padding: 5px 5px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+}
+
+.nav-body{
+    height: 441px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.nav-body>h1,.first-section h1,.second-section h1{
+    color: white;
+    font-size:48px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-body p,.first-section p,.second-section div{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.nav-body h1,.nav-body h1,.nav-body p,.nav-body div{
+    margin: 10px 0px;
+}
+
+.nav-body button{
+    font-size: 18px;
+    background-color:red;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.nav-body input
+{
+    font-size: 18px;
+    background-color: rgb(52, 51, 51);
+    color: white;
+    padding: 5px 100px 5px 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.seperation{
+    width: 100%;
+    height: 8px;
+    background-color: gray;
+}
+
+.first-section{
+    /* border: 10px solid red; */
+    padding: 50px 0px;
+    color: white;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+ .first-section .left{
+    width: 40%;
+    /* border: 5px solid rgb(222, 242, 37); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.first-section .right img{
+    height: 300px;
+}
+
+.first-section .right{
+    position: relative;
+    /* border: 5px solid rgb(47, 216, 228); */
+}
+
+.first-section .right video{
+    position: absolute;
+    top: 62px;
+    left: 52px;
+    width: 292px;
+    height: 164px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:750px) {
+    .first-section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-section .left{
+        width: 400px;
+    }
+}
+
+.fs3 .right video{
+    position: absolute;
+    top: 44px;
+    left: 76px;
+    width: 244px;
+    height: 113px;
+    object-fit: cover;
+}
+
+.fs3 .right img{
+    position:relative;
+    z-index: 1;
+}
+
+.second-section{
+  color: white;
+  background-color: black;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* section:nth-child(3)
+{
+    background-color: aqua;
+} */
+
+.second-section h1{
+    margin: 70px 0px 30px 0px;
+}
+
+.second-section .box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 46, 46);
+    height: 80px;
+    margin: 5px 0px;
+    padding: 0px 20px;
+}
+
+.second-section .box:hover{
+    background-color: rgb(75, 73, 73);
+}
+
+footer{
+    color: rgba(255,255,255,0.7);
+    width: 73%;
+    margin: 70px auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+footer .last select{
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+
+}
+
+footer .last-par{
+    border: 1px solid white;
+    display: inline;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+footer .netflix-india{
+    margin-top: 25px;
+}
+
+
+footer .last option{
+    color: rgba(255,255,255,0.7);
+    background-color: white;
+}
+
+footer a{
+    color: rgba(255,255,255,0.7);
+}
+
+footer .second{
+    margin-top: 20px;
+    /* background-color: rgb(85, 190, 190); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows:50px 50px 50px 50px 50px; */
+    grid-gap: 25px;
+}
+
+footer .last {
+    grid-row: 5/6;
+    grid-column: 1/2;
+}
+
+@media screen and (max-width:750px) {
+    footer .second{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .last {
+        grid-row: 9/10;
+        grid-column: 1/2;
+    }
+}
+
+
